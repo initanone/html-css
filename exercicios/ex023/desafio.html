@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+          
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .center{
+            text-align: center;
+        }
+        .left{
+            text-align: left;
+            color: white;
+            background-color: gray;
+        }
+     
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+<tr>
+    <th scope="col">Áreas</th>
+    <th scope="col">Diciplinas</th>
+    <th scope="colgroup" colspan="2">Notas</th>
+    <th scope="col">Média</th>
+</tr>
+        </thead>
+        <tbody>
+<tr>
+    <th scope="rowgroup" rowspan="4">Exatas</th>
+    <td>Matemática</td>
+    <th scope="col">Nota 1</th>
+    <th scope="col">Nota 2</th>
+    <td  class="center">0.0</td>
+</tr>
+<tr>
+    <td>Física</td>
+    <td class="center">0.0</td>
+    <td class="center">0.0</td>
+    <td class="center">0.0</td>
+</tr>
+<tr>
+    <td>Química</td>
+    <td class="center">0.0</td>
+    <td class="center">0.0</td>
+    <td class="center">0.0</td>
+</tr>
+<tr>
+    <td>Biologia</td>
+    <td class="center">0.0</td>
+    <td class="center">0.0</td>
+    <td class="center">0.0</td>
+</tr>
+<tr>
+    <th class="left" scope="row" colspan="4">Média de Exatas</th>
+    <td class="center">0.0</td>
+    
+</tr>
+<tr>
+    <th scope="rowgroup" rowspan="2">Humanas</th>
+    <td>História</td>
+    <td class="center">0.0</td>
+    <td class="center">0.0</td>
+    <td class="center">0.0</td>
+</tr>
+<tr>
+    <td>Geografia</td>
+    <td class="center">0.0</td>
+    <td class="center">0.0</td>
+    <td class="center">0.0</td>
+</tr>
+        </tbody>
+        <tfoot>
+<th class="left" scope="row" colspan="4">Média de Humanas</th>
+<td class="center">0.0</td>
+        </tfoot>
+    </table>
+
+    
+</body>
+</html>
