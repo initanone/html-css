@@ -24,26 +24,40 @@
             color: white;
             background-color: gray;
         }
+        #n2, #n1{
+            background-color: gray;
+            color: white;
+        }
+        .gray{
+            background-color: gray;
+            color: white;
+        }
      
     </style>
 </head>
 <body>
     <table>
         <thead>
+            
 <tr>
-    <th scope="col">Áreas</th>
-    <th scope="col">Diciplinas</th>
-    <th scope="colgroup" colspan="2">Notas</th>
-    <th scope="col">Média</th>
+    <th class="gray" rowspan="2" scope="col">Áreas</th>
+    <th class="gray" rowspan="2" scope="col">Diciplinas</th>
+    <th class="gray" scope="colgroup" colspan="2">Notas</th>
+   
+    <th class="gray" rowspan="2" scope="col">Média</th>
+</tr>
+<tr>
+    <td class="gray">nota 1</td>
+    <td class="gray">nota 2</td>
 </tr>
         </thead>
         <tbody>
 <tr>
     <th scope="rowgroup" rowspan="4">Exatas</th>
     <td>Matemática</td>
-    <th scope="col">Nota 1</th>
-    <th scope="col">Nota 2</th>
+   <td class="center">0.0</td>
     <td  class="center">0.0</td>
+    <td class="center">0.0</td>
 </tr>
 <tr>
     <td>Física</td>
@@ -65,7 +79,7 @@
 </tr>
 <tr>
     <th class="left" scope="row" colspan="4">Média de Exatas</th>
-    <td class="center">0.0</td>
+    <td class="center" id="n1">0.0</td>
     
 </tr>
 <tr>
@@ -84,7 +98,7 @@
         </tbody>
         <tfoot>
 <th class="left" scope="row" colspan="4">Média de Humanas</th>
-<td class="center">0.0</td>
+<td class="center" id="n2">0.0</td>
         </tfoot>
     </table>
 
