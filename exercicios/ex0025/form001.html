@@ -8,10 +8,30 @@
 <body>
     <h1>meu formulário</h1>
     
-   <form>
-       <p>nome:<input type="text" name="nome" id="nome"></p>
-       <p>sobrenome:<input type="text" name="sobrenome" id="sobrenome"></p>
+   <form action="cadastro.php" method="post"  autocomplete="off">
+       <p><label for="inome">nome:</label>
+        <input type="text" name="nome" id="inome"></p>
+       <p><label for="isobrenome">sobrenome:</label><input type="text" name="sobrenome" id="isobrenome"></p>
        <p><input type="submit" value="enviar"></p>
+   </form>
+   <form action="">
+    <p>
+        <label for="iname">name:</label>
+        <input type="text" name="name" id="iname">
+    </p>
+    <p>
+        <label for="isegundonome">segundo nome:</label>
+        <input type="text" name="segundonome" id="isegundonome">
+    </p>
+    
+    <input type="submit" value="encaminhar">
+   </form>
+   
+   <form action="">
+ <p><label for="inascimento">nascimento:</label>
+<input type="text" name="nascimento" id="inascimento"></p>
+<p><label for="icarrossel">carrosel</label> <input type="text" name="carrosel" id="icarrossel"></p>
+<p><input type="submit" value="show"></p>
    </form>
 </body>
 </html>
