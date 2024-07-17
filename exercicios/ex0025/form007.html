@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="">
+        <label for="iestado"></label>
+        <select name="estado" id="iestado">
+            <option selected value="escolha">---Escolha---</option>
+<optgroup label="região sudeste">
+    <option value="SP">são paulo</option>
+    <option value="MG">minas gerais</option>
+    <option value="RJ" > rio de janeiro</option>
+</optgroup>
+<optgroup label="região nordeste">
+    <option value="MA">maranhão</option>
+    <option value="PE">pernambuco</option>
+</optgroup>
+        </select>
+        <p><label for="iprof">Profissão:</label>
+        <input type="text" name="prof" id="iprof" list="lprof">
+    <datalist id="lprof">
+        <option value="adm">administrador</option>
+        <option value="veterinario">veterinário</option>
+        <option value="astronauta">comissário</option>
+    </datalist></p>
+    <p>
+       <label for="msg">Mensagem:</label>
+       <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="sua mensagem..."></textarea>
+    </p>
+        <p>
+        <input type="submit" value="enviar">
+        <input type="reset" value="limpar">
+    </p>
+    </form>
+</body>
+</html>
